@@ -1,0 +1,18 @@
+{
+  "name": "car-selling",
+  "version": "1.0.0",
+  "description": "car-selling",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm app.js",
+    "nodemon": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.2",
+    "nodemon": "^2.0.20"
+  }
+}
