@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "263499201269",
+    "project_id": "lk-carselling-sign",
+    "storage_bucket": "lk-carselling-sign.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263499201269:android:f8feace61239fd011ae3bc",
+        "android_client_info": {
+          "package_name": "com.Sl_Dev.vehicleSellApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263499201269-ik31eee3d98721a70pjj255betq4s46u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Sl_Dev.vehicleSellApp",
+            "certificate_hash": "0f14caea8542870a76ba2f0bf1efc8ebb0cf6866"
+          }
+        },
+        {
+          "client_id": "263499201269-d5fvsq1601puq3u0r46b34d0t4v5a3gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-_r762TqAcNrk5gNAEqjRHoz9AvIFtC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263499201269-d5fvsq1601puq3u0r46b34d0t4v5a3gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

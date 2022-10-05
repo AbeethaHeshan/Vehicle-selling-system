@@ -10,8 +10,25 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@firebase/auth": "^0.20.7",
+    "@react-native-firebase/app": "^15.7.0",
+    "@react-native-google-signin/google-signin": "^8.0.0",
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.0",
+    "base64-img": "^1.0.4",
+    "native-base": "^3.4.17",
     "react": "18.1.0",
-    "react-native": "0.70.1"
+    "react-native": "0.70.1",
+    "react-native-gesture-handler": "^2.7.0",
+    "react-native-image-crop-picker": "^0.38.0",
+    "react-native-image-picker": "^4.10.0",
+    "react-native-raw-bottom-sheet": "^2.2.0",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.17.0",
+    "react-native-splash-screen": "^3.3.0",
+    "react-native-svg": "^12.1.1",
+    "use-auto-focus-inputs": "^0.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
