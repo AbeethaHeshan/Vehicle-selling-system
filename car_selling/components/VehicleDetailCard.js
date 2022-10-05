@@ -4,8 +4,8 @@ import React from 'react'
 
 export default function VehicleDetailCard(props) {
    
-    let base64Icon = props.data.base64;
-
+    let base64Icon = props.data.image;
+   
   return (
     <NativeBaseProvider style={styles.st}>
             
@@ -14,7 +14,7 @@ export default function VehicleDetailCard(props) {
                         <Image source={{uri:`data:image/jpeg;base64,${base64Icon}`,}} style={{height: 100,width:125}} />
                         <VStack h="120" w="62%" space={5} alignItems="center">
                             <VStack alignItems="center">
-                                <Text bold fontSize="md"  style={{top:8}}>{props.data.vehicleName}</Text>
+                                <Text bold fontSize="md"  style={{top:8}}>{props.data.brand}</Text>
                             </VStack>
                             
                             <VStack  w="100%"  h="62" >
