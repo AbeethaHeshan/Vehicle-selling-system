@@ -11,7 +11,7 @@ app.use(cros())
 app.use('/user',user);
 app.use('/vehicle',vehicle);
 
-const url = 'mongodb://localhost/veicle-sell'
+const url = 'mongodb://localhost/veicle-selling'
 
 mongoose.connect(url,{useNewUrlParser: true})
 const connection = mongoose.connection;

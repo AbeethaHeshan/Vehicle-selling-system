@@ -9,10 +9,26 @@ const vehicleSchema = mongoose.Schema({
           type:String,
           require:true
        },
-       description:{
+       currentOwner:{
           type:String,
           require:true
        },
+       address:{
+         type:String,
+         require:true
+      },
+       Country:{
+         type:String,
+         require:true
+      },
+       date:{
+         type:Date,
+         require:true
+      },
+       tel:{
+         type:String,
+         require:true
+      },
        image:{
           type:String,
           require:true
