@@ -37,12 +37,15 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
+google-services.json
+
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
 !debug.keystore
+
 
 # fastlane
 #
