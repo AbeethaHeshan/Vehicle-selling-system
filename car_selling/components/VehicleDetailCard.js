@@ -6,7 +6,7 @@ export default function VehicleDetailCard(props) {
     const [state, setstate] = useState()
     let count = 0;
     let base64Icon = props.data.image;
-    console.log( props.data );
+  
   return (
     <NativeBaseProvider style={styles.st}>
               

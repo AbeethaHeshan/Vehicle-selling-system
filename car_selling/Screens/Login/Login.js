@@ -5,8 +5,8 @@ import SplashScreen from 'react-native-splash-screen'
 import { Input,VStack,HStack, Text, Center, NativeBaseProvider,Image } from "native-base";
 
 export default function Login({ navigation }) {
-       SplashScreen.show() 
-      
+   
+      const[user,setUserInfo] = useState();
     
 
 
@@ -15,6 +15,7 @@ export default function Login({ navigation }) {
           //await GoogleSignin.hasPlayServices();
           const userInfo = await GoogleSignin.signIn();
           console.log(userInfo);
+          setUserInfo(userInfo);
         } catch (error) {
           if (error.code === statusCodes.SIGN_IN_CANCELLED) {
             // user cancelled the login flow
@@ -27,8 +28,17 @@ export default function Login({ navigation }) {
           }
         }
       };
-      
-      
+
+
+   
+
+
+      const isSignedIn = async () => {
+        const isSignedIn = await GoogleSignin.isSignedIn();
+        if(isSignedIn){
+          navigation.navigate('vhicleDetails');
+        }
+      };
 
 
 
@@ -36,11 +46,14 @@ export default function Login({ navigation }) {
     useEffect(()=>{
       
        SplashScreen.hide();
-
+       
 
        GoogleSignin.configure({
             webClientId: '159591925222-fpehcia6g2dpj7kgnhf40ds5qnag5ei6.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
        });
+       
+       isSignedIn();
+
     },[])
 
     const vehicleDetails = () => {
@@ -72,7 +85,7 @@ export default function Login({ navigation }) {
                        Create a New Accout
                    </Text>
                 </HStack>
-                
+
                 <GoogleSigninButton
                     style={{ width: 192, height: 48 }}
                     size={GoogleSigninButton.Size.Wide}

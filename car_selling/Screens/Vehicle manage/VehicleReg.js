@@ -70,7 +70,7 @@ export default function VehicleReg() {
      const saveData = async () => {
     
              
-        await fetch('http://192.168.8.100:4000/vehicle/', {
+        await fetch('http://192.168.8.102:4000/vehicle/', {
           method: 'POST', // or 'PUT'
           headers: {
             'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export default function VehicleReg() {
           })
           .then((response) => response.json())
           .then((data) => {
-            console.log('Success:', data);
+            console.log('Success:');
             clearTextBoxes();
           })
           .catch((error) => {
