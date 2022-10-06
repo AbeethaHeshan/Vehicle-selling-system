@@ -1,14 +1,15 @@
 import { View, Image,StyleSheet} from 'react-native'
 import { HStack, NativeBaseProvider, VStack ,Text} from 'native-base';
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function VehicleDetailCard(props) {
-   
+    const [state, setstate] = useState()
+    let count = 0;
     let base64Icon = props.data.image;
-   
+    console.log( props.data );
   return (
     <NativeBaseProvider style={styles.st}>
-            
+              
 
                 <HStack space={1}  h="120" w="100%" alignItems="center" >
                         <Image source={{uri:`data:image/jpeg;base64,${base64Icon}`,}} style={{height: 100,width:125}} />

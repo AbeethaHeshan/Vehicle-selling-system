@@ -7,10 +7,40 @@ import { Input,VStack,HStack, Text, Center, NativeBaseProvider,Image } from "nat
 export default function Login({ navigation }) {
        SplashScreen.show() 
       
+    
+
+
+      const signIn = async () => {
+        try {
+          //await GoogleSignin.hasPlayServices();
+          const userInfo = await GoogleSignin.signIn();
+          console.log(userInfo);
+        } catch (error) {
+          if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+            // user cancelled the login flow
+          } else if (error.code === statusCodes.IN_PROGRESS) {
+            // operation (e.g. sign in) is in progress already
+          } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+            // play services not available or outdated
+          } else {
+            // some other error happened
+          }
+        }
+      };
+      
+      
+
+
+
+
     useEffect(()=>{
       
        SplashScreen.hide();
 
+
+       GoogleSignin.configure({
+            webClientId: '159591925222-fpehcia6g2dpj7kgnhf40ds5qnag5ei6.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
+       });
     },[])
 
     const vehicleDetails = () => {
@@ -42,10 +72,16 @@ export default function Login({ navigation }) {
                        Create a New Accout
                    </Text>
                 </HStack>
-            
+                
+                <GoogleSigninButton
+                    style={{ width: 192, height: 48 }}
+                    size={GoogleSigninButton.Size.Wide}
+                    color={GoogleSigninButton.Color.Dark}
+                    onPress={signIn}
+                /> 
+                
+      </VStack>  
               
-      </VStack>
-    
     </NativeBaseProvider>
   )
 }

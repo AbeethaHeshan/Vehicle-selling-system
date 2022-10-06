@@ -28,6 +28,7 @@
     "react-native-screens": "^3.17.0",
     "react-native-splash-screen": "^3.3.0",
     "react-native-svg": "^12.1.1",
+    "react-spinners": "^0.13.5",
     "use-auto-focus-inputs": "^0.1.2"
   },
   "devDependencies": {

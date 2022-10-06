@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "263499201269",
-    "project_id": "lk-carselling-sign",
-    "storage_bucket": "lk-carselling-sign.appspot.com"
+    "project_number": "159591925222",
+    "project_id": "car-selling-ffe61",
+    "storage_bucket": "car-selling-ffe61.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:263499201269:android:f8feace61239fd011ae3bc",
+        "mobilesdk_app_id": "1:159591925222:android:e44cd5a3a06bf9d9fb8227",
         "android_client_info": {
-          "package_name": "com.Sl_Dev.vehicleSellApp"
+          "package_name": "com.car_selling"
         }
       },
       "oauth_client": [
         {
-          "client_id": "263499201269-ik31eee3d98721a70pjj255betq4s46u.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.Sl_Dev.vehicleSellApp",
-            "certificate_hash": "0f14caea8542870a76ba2f0bf1efc8ebb0cf6866"
-          }
-        },
-        {
-          "client_id": "263499201269-d5fvsq1601puq3u0r46b34d0t4v5a3gq.apps.googleusercontent.com",
+          "client_id": "159591925222-fpehcia6g2dpj7kgnhf40ds5qnag5ei6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD-_r762TqAcNrk5gNAEqjRHoz9AvIFtC0"
+          "current_key": "AIzaSyAzMAdnnnzBxli0T-Pv-kZcOOqG1uBJSf4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "263499201269-d5fvsq1601puq3u0r46b34d0t4v5a3gq.apps.googleusercontent.com",
+              "client_id": "159591925222-fpehcia6g2dpj7kgnhf40ds5qnag5ei6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

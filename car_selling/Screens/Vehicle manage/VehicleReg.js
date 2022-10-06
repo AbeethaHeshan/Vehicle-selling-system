@@ -68,7 +68,7 @@ export default function VehicleReg() {
 
    // save data to the db
      const saveData = async () => {
-      console.log("sdsdsd");
+    
              
         await fetch('http://192.168.8.100:4000/vehicle/', {
           method: 'POST', // or 'PUT'
